@@ -11,8 +11,20 @@ datasource db {
 }
 
 model Courses {
-  id   Int    @id @default(autoincrement())
-  name String
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  duration    Int
+  created_at  DateTime @default(now())
 
-  @@map("courses")
+  @@map("Courses")
+}
+
+model Modules {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  created_at  DateTime @default(now())
+
+  @@map("Modules")
 }
