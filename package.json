@@ -4,7 +4,11 @@
   "main": "index.js",
   "author": "eduardo j. guerra",
   "license": "MIT",
-  "dependencies": {
+  "repository": "git@github.com:edujguerra/prisma.git",
+  "devDependencies": {
     "prisma": "^4.7.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.7.1"
   }
 }
