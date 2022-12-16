@@ -6,8 +6,8 @@ async function main() {
     const result = await prisma.courses.create({
         data: {
             duration: 200,
-            name: "Curso de Node JS",
-            description: "Cursos excelente de node."
+            name: "Curso11111 de Node JS",
+            description: "Cursos excelente de node1111."
         }
     })
 
@@ -16,4 +16,4 @@ async function main() {
 
 main();
 // para rodar:
-// yarn ts-node-dev server.ts
+// yarn ts-node-dev src/create.ts
